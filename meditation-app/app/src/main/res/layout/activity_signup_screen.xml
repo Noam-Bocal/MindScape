@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context=".SignupScreen">
+
+    <EditText
+        android:id="@+id/genderPT"
+        android:layout_width="245dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="gender:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernamePT"
+        android:layout_width="245dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="username:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderPT" />
+
+    <EditText
+        android:id="@+id/passwordPT"
+        android:layout_width="245dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="password:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernamePT" />
+
+    <EditText
+        android:id="@+id/emailPT"
+        android:layout_width="245dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="email:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordPT" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/SignUpbtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="72dp"
+        android:backgroundTint="@color/bottom_nav_color"
+        android:onClick="Register"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailPT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

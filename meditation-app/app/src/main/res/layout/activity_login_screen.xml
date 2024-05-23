@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context=".LoginScreen">
+
+    <EditText
+        android:id="@+id/usernamePT"
+        android:layout_width="245dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="username:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordPT"
+        android:layout_width="245dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="password:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usernamePT" />
+
+    <ImageButton
+        android:id="@+id/loginImgButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#00041548"
+        android:onClick="login"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_icon" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/SignUpbtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="119dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="@color/bottom_nav_color"
+        android:onClick="register"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/loginImgButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

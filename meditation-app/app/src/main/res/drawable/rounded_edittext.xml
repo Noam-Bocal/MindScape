@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Setting the inside of the rectangle to be transparent -->
+            <solid android:color="@android:color/transparent"/>
+            <corners android:radius="16dp"/>
+            <!-- Setting the edges to be white -->
+            <stroke android:color="@android:color/white" android:width="2dp"/>
+        </shape>
+    </item>
+</selector>

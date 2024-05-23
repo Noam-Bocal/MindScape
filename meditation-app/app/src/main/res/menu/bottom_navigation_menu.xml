@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/meditate"
+        android:icon="@drawable/meditate_icon"
+        android:title="Meditate" />
+
+    <item
+        android:id="@+id/nav_mood"
+        android:icon="@drawable/moods_icon"
+        android:title="Mood" />
+
+    <item
+        android:id="@+id/nav_reminder"
+        android:icon="@drawable/reminder_icon"
+        android:title="Reminder" />
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon"
+        android:title="Home" />
+
+
+</menu>

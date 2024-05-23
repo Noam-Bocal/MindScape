@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context=".MeditateScreen">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/meditateBtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="268dp"
+        android:backgroundTint="@color/bottom_nav_color"
+        android:onClick="getUserGender"
+        android:text="מדיטציה"
+        android:textColor="@android:color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/musicBtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:backgroundTint="@color/bottom_nav_color"
+        android:onClick="fetchSounds"
+        android:text="קטעי שמע"
+        android:textColor="@android:color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backgroundTint="@color/bottom_nav_color"
+            app:itemIconTint="#FFFFFF"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_navigation_menu"
+            tools:ignore="MissingConstraints" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="168dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:stretchColumns="*">
+
+            </TableLayout>
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/playImageButton"
+            android:layout_width="78dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="581dp"
+            android:layout_marginEnd="187dp"
+            android:layout_marginBottom="300dp"
+            android:backgroundTint="#00FFFFFF"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/play_icon"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backBtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bottom_nav_color"
+        android:text="חזור"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:cornerRadius="16dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="593dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
